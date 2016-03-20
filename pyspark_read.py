@@ -1,4 +1,4 @@
-mport os
+import os
 import sys
 from pyspark import SparkConf, SparkContext
 from pyspark.sql import SQLContext
