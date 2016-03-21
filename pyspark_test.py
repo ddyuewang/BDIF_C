@@ -3,8 +3,10 @@ from pyspark.sql.functions import col
 
 sqlContext = SQLContext(sc)
 
-# given an input string file, here has to be thru hadoop put -fs first 
-test_2000 = sqlContext.read.json("tweets/yue_test_2000.json")
+# given an input string file, here has to be thru hadoop put -fs first
+test_20 = sqlContext.read.json("tweets/yue_test.json")
+
+test_200 = sqlContext.read.json("tweets/yue_test_200.json")
 
 
 test_2000.registerTempTable("test_2000")
